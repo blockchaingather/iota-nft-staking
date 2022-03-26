@@ -1,0 +1,55 @@
+{
+  "name": "iota-nft",
+  "version": "1.0.0",
+  "description": "Iota Nft Staking",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "lint": "npm run lint:js && npm run lint:sol",
+    "lint:fix": "npm run lint:js:fix && npm run lint:sol:fix",
+    "lint:js": "eslint --ignore-path .gitignore .",
+    "lint:js:fix": "eslint --ignore-path .gitignore . --fix",
+    "lint:sol": "solhint 'contracts/*.sol' && prettier -c 'contracts/*.sol'",
+    "lint:sol:fix": "prettier --write \"contracts/**/*.sol\"",
+    "test:local": "hardhat test --network local",
+    "coverage": "env COVERAGE=true hardhat coverage",
+    "deploy:local": "hardhat run --network local scripts/deploy_contracts.js",
+    "clean": "hardhat clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptobadass/iota-nft.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cryptobadass/iota-nft/issues"
+  },
+  "homepage": "https://github.com/cryptobadass/iota-nft#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "bignumber.js": "^9.0.2",
+    "chai": "^4.3.6",
+    "eslint": "^8.11.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-mocha": "^10.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.6.1",
+    "hardhat": "^2.9.1",
+    "prettier": "^2.6.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.7.20",
+    "yargs": "^17.4.0"
+  }
+}

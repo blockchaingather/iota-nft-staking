@@ -1,0 +1,18 @@
+# dir
+artifacts
+cache
+node_modules
+
+# logs
+logs
+# dotenv environment variables file
+.env
+.env.test
+.env.local
+.env.development
+.env.production
+
+# Coverage directory used by tools like istanbul
+coverage
+coverage.json
+coverageEnv
