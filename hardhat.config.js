@@ -22,6 +22,12 @@ module.exports = {
     local: {
       url: 'http://127.0.0.1:8545', // suggest using ganache-cli when doing test case
     },
+    iota_evm: {
+      url: 'https://evm.wasp.sc.iota.org',
+      chainId: 1074,
+      accounts: [process.env.IOTA_ACCOUNT_PRIVATE_KEY],
+      timeout: 60000
+    }
   },
   solidity: {
     version: '0.8.7',

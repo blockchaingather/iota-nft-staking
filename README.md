@@ -69,6 +69,7 @@ restart Ganache GUI or ganache-cli
 If you want to run the project, you should copy .env.example file and rename it to .env. And if you want to run project on other networks instead of the local development network, you should fill values in .env file, 6 parts below:
 
 - RINKEBY_RPC_URL, MAINNET_RPC_URL --- rpc url, according to the NETWORK you choose
+- IOTA_ACCOUNT_PRIVATE_KEY --- private key
 - ETHERSCAN_API_KEY --- etherscan api key
 
 
